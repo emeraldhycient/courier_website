@@ -13,7 +13,7 @@ function Footer() {
               <div className="col-md-4 mt-4">
                 <a className="" href="/">
                   <h3 className="primary-text">
-                    <b>BIACOURIER</b>
+                    <b>CEDACOURIER</b>
                   </h3>
                 </a>
               </div>
@@ -79,7 +79,7 @@ function Footer() {
       </div>
       <div className="bottom-part text-center pt-3">
         <h5>
-          <b className="text-light mr-2">&copy; BiaCourier</b>
+          <b className="text-light mr-2">&copy; CedaCourier</b>
           <span className="text-muted">{year}</span>
         </h5>
       </div>

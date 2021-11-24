@@ -1,11 +1,12 @@
 import React from "react";
+import { logout } from "../../Auth/auth";
 
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand ml-3" href="/">
         <h3 className="primary-text">
-          <b>BIACOURIER</b>
+          <b>CedaCourier</b>
         </h3>
       </a>
       <button
@@ -31,20 +32,26 @@ function Header() {
             </a>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="/admin/dashboard/payment">
+            <a className="nav-link" href="/admin/dashboard/users">
               <h6>
                 <i className="fa fa-columns mr-1"></i>
-                Payments
+                Users
               </h6>
             </a>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="/admin/dashboard/users">
+            <a className="nav-link" href="/admin/dashboard/messages">
               <h6>
                 <i className="fa fa-users mr-1"></i>
-                Users
+                Messages
               </h6>
             </a>
+          </li>
+          <li className="nav-item active" onClick={(e) => logout()}>
+            <button className="btn primary-bg text-light">
+              <i className="fa fa-logout mr-1"></i>
+              Logout
+            </button>
           </li>
         </ul>
       </div>

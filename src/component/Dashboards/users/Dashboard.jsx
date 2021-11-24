@@ -11,9 +11,7 @@ function Dashboard() {
     const userid = sessionStorage.getItem("userid");
 
     axios
-      .get(
-        `https://www.api.biacourier.com/user/allBooking.php?userid=${userid}`
-      )
+      .get(`https://api.cedacourier.com/user/allBooking.php?userid=${userid}`)
       .then((res) => {
         if (res.data.status === "success") {
           const dat = Object.values(res.data.data);

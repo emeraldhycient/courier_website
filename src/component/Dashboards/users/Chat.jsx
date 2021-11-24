@@ -16,7 +16,7 @@ function Chat() {
     formdata.append("receiver", receiver);
     formdata.append("message", message);
     axios
-      .post("https://www.api.biacourier.com/admin/sendmessage.php", formdata)
+      .post("https://api.cedacourier.com/admin/sendmessage.php", formdata)
       .then((res) => {
         if (res.data.status === "success") {
           setmessage("");
@@ -32,7 +32,7 @@ function Chat() {
     formdata.append("receiver", receiver);
     formdata.append("sender", sessionStorage.getItem("userid"));
     axios
-      .post(`https://www.api.biacourier.com/admin/message.php`, formdata)
+      .post(`https://api.cedacourier.com/admin/message.php`, formdata)
       .then((res) => {
         if (res.data.status === "success") {
           const dat = Object.values(res.data.data);

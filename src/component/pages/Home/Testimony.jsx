@@ -13,9 +13,13 @@ function Testimony() {
       <div className="container pt-3">
         <div className="row">
           <div className="col-md-4 mb-3">
-            <img src={home} alt="" className="img-fluid mb-2" />
+            <img
+              src="https://images.unsplash.com/photo-1595054225874-7d2315262e73?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80"
+              alt=""
+              className="img-fluid mb-2"
+            />
             <h4 className="primary-text">
-              <b>Linda Johnson</b>
+              <b>James clinton</b>
             </h4>
             <p className="text-muted">Satisfied client</p>
             <p className="text-muted mt-2">
@@ -26,27 +30,27 @@ function Testimony() {
           <div className="col-md-4 mb-3">
             <img src={home} alt="" className="img-fluid mb-2" />
             <h4 className="primary-text">
-              <b>Susan Luke</b>
+              <b> Luke Hannah</b>
             </h4>
             <p className="text-muted">Satisfied client</p>
             <p className="text-muted mt-2">
               I’ve tried a lot of courier company, all on same ground, Now you
-              can say bye-bye to delayed delivery, BiaCourier is changing the
+              can say bye-bye to delayed delivery, CedaCourier is changing the
               story everyday.
             </p>
           </div>
           <div className="col-md-4 mb-3">
             <img
-              src="https://elemonwaves.com/wp-content/uploads/2021/04/happy-female-customer-receiving-food-from-grocery-store-taking-package-from-courier-her-gate-shipping-delivery-service-concept_74855-11788.jpg"
+              src="https://images.unsplash.com/photo-1526367790999-0150786686a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80"
               alt=""
               className="img-fluid mb-2"
             />
             <h4 className="primary-text">
-              <b>morgan page</b>
+              <b>Steve Jonathan</b>
             </h4>
             <p className="text-muted">Satisfied client</p>
             <p className="text-muted mt-2">
-              BiaCourier is not just a company, it’s a team, a big one indeed,
+              CedaCourier is not just a company, it’s a team, a big one indeed,
               that consists of a network of hardworking men and women .
             </p>
           </div>

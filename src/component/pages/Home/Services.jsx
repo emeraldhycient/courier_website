@@ -14,7 +14,7 @@ function Services() {
           <div className="col-md-6">
             <p>
               Globally known for our ability to handle every last detail of our
-              customers’ particular logistics and forwarding needs, BiaCourier
+              customers’ particular logistics and forwarding needs, CedaCourier
               Special Services team takes care of all your logistics.
             </p>
           </div>
@@ -30,7 +30,7 @@ function Services() {
               </h6>
             </div>
             <img
-              src="https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FyZ28lMjBzaGlwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              src="https://images.unsplash.com/photo-1590496794008-383c8070b257?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1091&q=80"
               alt=""
               className="img-fluid h-50 w-100 mt-3"
             />
@@ -42,7 +42,7 @@ function Services() {
           <div className="col-md-4">
             <div className="d-flex align-items-center">
               <div className="circle mr-2">
-                <i className="fa fa-truck fa-2x"></i>
+                <i className="fa fa-truck fa-2x text-danger"></i>
               </div>
               <h6>
                 <b>Freight Delivery</b>
@@ -68,7 +68,7 @@ function Services() {
               </h6>
             </div>
             <img
-              src="https://media.istockphoto.com/photos/weve-got-you-covered-during-lockdown-picture-id1287632111?b=1&k=20&m=1287632111&s=170667a&w=0&h=PvIcxOiA4Ofhy3FN6S4gcJXlU-EfsmkDnBKt3HmZNw8="
+              src="https://images.unsplash.com/photo-1613329284267-4b59c5a78deb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=386&q=80"
               alt=""
               className="img-fluid h-50 w-100 mt-3"
             />

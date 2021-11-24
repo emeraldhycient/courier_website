@@ -1,7 +1,4 @@
 import React from "react";
-import sea from "../../images/sea.jpeg";
-import air from "../../images/air.jpeg";
-import fast from "../../images/fast.jpeg";
 
 function Hero() {
   return (
@@ -22,10 +19,14 @@ function Hero() {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={sea} alt="..." className="heroimg" />
+            <img
+              src="https://images.unsplash.com/photo-1592174913908-ab7350422ebe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1033&q=80"
+              alt="..."
+              className="heroimg"
+            />
             <div className="carousel-caption">
               <p>
-                Bia-courier supports Industries, importers, Online Sellers,
+                CedaCourier supports Industries, importers, Online Sellers,
                 Startup Brands and Big Businesses to find reliable suppliers,
                 get the right prices, follow up production, ensure quality and
                 deliver goods to you in time. We are here at your disposal!
@@ -45,10 +46,14 @@ function Hero() {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={air} alt="..." className="heroimg" />
+            <img
+              src="https://images.unsplash.com/photo-1635851801927-44c4d1c555af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=873&q=80"
+              alt="..."
+              className="heroimg"
+            />
             <div className="carousel-caption">
               <p>
-                Bia-courier supports Industries, importers, Online Sellers,
+                CedaCourier supports Industries, importers, Online Sellers,
                 Startup Brands and Big Businesses to find reliable suppliers,
                 get the right prices, follow up production, ensure quality and
                 deliver goods to you in time. We are here at your disposal!
@@ -68,10 +73,14 @@ function Hero() {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={fast} alt="..." className="heroimg" />
+            <img
+              src="https://images.unsplash.com/photo-1615287271786-c20bdbe04c24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+              alt="..."
+              className="heroimg"
+            />
             <div className="carousel-caption">
               <p>
-                Bia-courier supports Industries, importers, Online Sellers,
+                CedaCourier supports Industries, importers, Online Sellers,
                 Startup Brands and Big Businesses to find reliable suppliers,
                 get the right prices, follow up production, ensure quality and
                 deliver goods to you in time. We are here at your disposal!

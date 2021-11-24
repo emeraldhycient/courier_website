@@ -32,7 +32,7 @@ function EditBooking() {
     formdata.append("detail6", detail6);
 
     axios
-      .post("https://www.api.biacourier.com/admin/updatelocation.php", formdata)
+      .post("https://api.cedacourier.com/admin/updatelocation.php", formdata)
       .then((res) => {
         window.alert(res.data.message);
       })
@@ -46,7 +46,7 @@ function EditBooking() {
     const formdata = new FormData();
     formdata.append("tracking", tracking);
     axios
-      .post("https://www.api.biacourier.com/admin/track.php", formdata)
+      .post("https://api.cedacourier.com/admin/track.php", formdata)
       .then((res) => {
         if (res.data.status === "success") {
           setlocation(res.data.data.locations);

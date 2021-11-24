@@ -5,7 +5,7 @@ function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand ml-3" href="/">
         <h3 className="primary-text">
-          <b>BIACOURIER</b>
+          <b>CEDACOURIER</b>
         </h3>
       </a>
       <button

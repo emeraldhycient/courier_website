@@ -7,7 +7,7 @@ function Booking() {
   const confirmpayment = (tracking) => {
     axios
       .get(
-        `https://www.api.biacourier.com/admin/updatebooking.php?tracking=${tracking}`
+        `https://api.cedacourier.com/admin/updatebooking.php?tracking=${tracking}`
       )
       .then((res) => {
         if (res.data.status === "success") {
@@ -24,7 +24,7 @@ function Booking() {
 
   const getBookings = () => {
     axios
-      .get(`https://www.api.biacourier.com/admin/allbookings.php`)
+      .get(`https://api.cedacourier.com/admin/allbookings.php`)
       .then((res) => {
         if (res.data.status === "success") {
           const dat = Object.values(res.data.data);
@@ -68,7 +68,7 @@ function Booking() {
               <tbody>
                 {bookings ? (
                   bookings.map((booking, i) => (
-                    <tr>
+                    <tr key={i}>
                       <td>{booking.id}</td>
                       <td>{booking.tracking}</td>
                       <td>{booking.receivername}</td>

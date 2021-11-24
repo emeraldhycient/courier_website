@@ -9,7 +9,6 @@ import Register from "./component/pages/Register";
 import CreateBooking from "./component/Dashboards/users/Create-Booking";
 import Dashboard from "./component/Dashboards/users/Dashboard";
 import Admin from "./component/Dashboards/Admin/Admin";
-import Users from "./component/Dashboards/Admin/Users";
 import Message from "./component/Dashboards/Admin/Message";
 import Chat from "./component/Dashboards/users/Chat";
 import EditBooking from "./component/Dashboards/Admin/EditBooking";
@@ -17,6 +16,9 @@ import EditBooking from "./component/Dashboards/Admin/EditBooking";
 import ProtectedUsersRoutes from "./component/Auth/ProtectedUsersRoutes";
 import ProtectedAdminRoutes from "./component/Auth/ProtectedAdminRoutes";
 import Contact from "./component/pages/Contact";
+import Messages from "./component/Dashboards/Admin/Messages";
+import Users from "./component/Dashboards/Admin/Users";
+import EditUser from "./component/Dashboards/Admin/EditUser";
 
 function App() {
   const options = {
@@ -59,19 +61,24 @@ function App() {
               component={Admin}
             />
             <ProtectedAdminRoutes
-              path="/admin/dashboard/users"
-              exact
-              component={Users}
+              path="/admin/dashboard/messages"
+              component={Messages}
             />
             <ProtectedAdminRoutes
               path="/admin/dashboard/update-location/:tracking"
-              exact
               component={EditBooking}
             />
             <ProtectedAdminRoutes
               path="/admin/dashboard/message/:receiver"
-              exact
               component={Message}
+            />
+            <ProtectedAdminRoutes
+              path="/admin/dashboard/users"
+              component={Users}
+            />
+            <ProtectedAdminRoutes
+              path="/admin/dashboard/edit-user/:userid"
+              component={EditUser}
             />
           </Switch>
         </Router>

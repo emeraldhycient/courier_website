@@ -20,7 +20,7 @@ function Login() {
     formdata.append("password", password);
 
     axios
-      .post("https://www.api.biacourier.com/auth/login.php", formdata)
+      .post("https://api.cedacourier.com/auth/login.php", formdata)
       .then((res) => {
         console.log(res);
         if (res.data.status === "success") {
@@ -52,7 +52,7 @@ function Login() {
   };
 
   useEffect(() => {
-    document.title = "login to your biacourier dashboard";
+    document.title = "login to your CedaCourier dashboard";
   }, []);
   return (
     <div>

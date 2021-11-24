@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import Header from "../common/Header";
@@ -7,6 +7,20 @@ import Map from "../common/Map/Map";
 
 function Contact() {
   let location = useLocation();
+
+  useEffect(() => {
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/619e70f66885f60a50bd635d/1fl9eihis";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  }, []);
 
   return (
     <>
@@ -36,19 +50,19 @@ function Contact() {
                 <h6>
                   <i className="fa fa-envelope text-danger bg-light rounded p-2 mr-2"></i>
                   <a
-                    href="mailto:support@biacourier.com"
+                    href="mailto:support@CedaCourier.com"
                     className="text-light"
                   >
-                    support@biacourier.com
+                    support@CedaCourier.com
                   </a>
                 </h6>
                 <h6>
                   <i className="fa fa-envelope text-danger bg-light rounded p-2 mr-2"></i>
                   <a
-                    href="mailto:support@biacourier.com"
+                    href="mailto:support@CedaCourier.com"
                     className="text-light"
                   >
-                    support@biacourier.com
+                    support@CedaCourier.com
                   </a>
                 </h6>
               </div>

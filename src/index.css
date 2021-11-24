@@ -8,11 +8,11 @@ body {
 }
 
 .primary-bg {
-    background-color: #A020F0;
+    background-color: #ffd000;
 }
 
 .primary-text {
-    color: rgb(160, 32, 240);
+    color: #ffd000;
 }
 
 .shadow {
@@ -23,6 +23,6 @@ body {
 
 .hr {
     width: 100px;
-    background-color: #A020F0;
+    background-color: #ffd000;
     height: 4px;
 }

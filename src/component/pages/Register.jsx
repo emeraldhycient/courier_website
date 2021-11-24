@@ -26,7 +26,7 @@ function Register() {
     formdata.append("isadmin", "");
 
     axios
-      .post("https://www.api.biacourier.com/auth/createaccount.php", formdata)
+      .post("https://api.cedacourier.com/auth/createaccount.php", formdata)
       .then((res) => {
         console.log(res);
         if (res.data.status === "success") {
@@ -46,7 +46,7 @@ function Register() {
   };
 
   useEffect(() => {
-    document.title = "Register to your biacourier dashboard";
+    document.title = "Register to your CedaCourier dashboard";
   }, []);
   return (
     <div>

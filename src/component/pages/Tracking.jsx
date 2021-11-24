@@ -2,12 +2,25 @@ import React, { useState, useEffect } from "react";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import Testimony from "./Home/Testimony";
-import Map from "../common/Map/Map";
 import axios from "axios";
 
 function Tracking() {
   useEffect(() => {
     document.title = "tracking your goods and percel";
+  }, []);
+
+  useEffect(() => {
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/619e70f66885f60a50bd635d/1fl9eihis";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
   }, []);
 
   const [tracking, settracking] = useState("");
@@ -18,7 +31,7 @@ function Tracking() {
     const formdata = new FormData();
     formdata.append("tracking", tracking);
     axios
-      .post("https://www.api.biacourier.com/admin/track.php", formdata)
+      .post("https://api.cedacourier.com/admin/track.php", formdata)
       .then((res) => {
         if (res.data.status === "success") {
           setbooking(res.data.data);
@@ -72,7 +85,23 @@ function Tracking() {
       {booking ? (
         <div id="map" className="mt-5" style={{ marginBottom: "700px" }}>
           <div className="col-md-6 m-auto">
-            <Map />
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="300"
+                  id="gmap_canvas"
+                  src={booking.currentlocation}
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  title="cedacourier tracking"
+                ></iframe>
+                <br />
+                <a href="https://www.embedgooglemap.net"></a>
+              </div>
+            </div>{" "}
           </div>
           <div className="col-md-6 m-auto py-2 bg-light wow slideInLeft">
             <h3
@@ -224,7 +253,9 @@ function Tracking() {
               </div>
             </div>
 
-            <h6 className="text-dark mb-3 mt-3 ml-3">{booking.locations}</h6>
+            <h6 className="text-dark mb-3 mt-3 ml-3">
+              {booking.currentlocation}
+            </h6>
 
             <div className="mt-3">
               <h5 className="text-dark ml-3 mb-2">Receiver Details</h5>

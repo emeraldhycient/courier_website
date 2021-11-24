@@ -42,7 +42,7 @@ function CreateBooking() {
     formdata.append("senderid", sessionStorage.getItem("userid"));
 
     axios
-      .post("https://www.api.biacourier.com/user/createBooking.php", formdata)
+      .post("https://api.cedacourier.com/user/createBooking.php", formdata)
       .then((res) => {
         if (res.data.status === "success") {
           alert.success(res.data.message);

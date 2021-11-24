@@ -62,7 +62,7 @@ function About() {
           </div>
           <div className="col-md-5">
             <img
-              src="https://jthemes.net/themes/wp/gocourier/wp-content/uploads/2016/05/about-img.png"
+              src="https://img.freepik.com/free-photo/van-white-background-ing_110893-772.jpg?size=626&ext=jpg"
               alt=""
               className="img-fluid"
             />
